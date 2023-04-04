@@ -1,0 +1,56 @@
+<html>
+
+<head>
+
+    <title>DMS1 Assignment 2</title>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+</head>
+
+
+<body style="background-color: rgb(182, 153, 86);">
+    <!--
+    <h1 style="color: blanchedalmond;">DMS1 Assignment 2</h1>
+    <h2 style="color: blanchedalmond;">Create nine unified and responsive icons in regards to the prompt: Memory.<br> Due 19 April. 25%</h2>
+-->
+
+    <img id="donut1" src="img/yellow.png" onmousedown="this.src='img/pink.png';" onmouseup="this.src='img/yellow.png';" width="400" height="400"/> 
+    <img id="donut2" src="img/pink.png" click="this.src='img/blue.png';" onmouseup="this.src='img/pink.png';" width="400" height="400"/> 
+    <img id="donut3" src="img/blue.png" click="this.src='img/yellow.png';" onmouseup="this.src='img/blue.png';" width="400" height="400"/> 
+
+ 
+   
+   <script>
+
+        var sound1 = new buzz.sound("sound/glitch1.mp3");
+        var sound2 = new buzz.sound("sound/glitch2.mp3");
+        var sound3 = new buzz.sound("sound/glitch3.mp3");
+    
+
+        window.onload = function() {
+            document.getElementById('donut1').addEventListener('onmousedown', function () {sound1.play();});
+            document.getElementById('donut2').addEventListener('onmousedown', function () {sound2.play();});
+            document.getElementById('donut3').addEventListener('onmousedown', function () {sound3.play();});
+        };
+    
+
+    </script>
+ 
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
